@@ -46,7 +46,7 @@ public class Base {
 
         if(OS.equalsIgnoreCase("ios")){
             if(appType.contains("iPhone")){
-                appDirectory = new File("IOS/src/app");
+                appDirectory = new File("UICatalog/src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
@@ -161,13 +161,14 @@ public class Base {
     public void clickByXpathWebElement(WebElement locator){
         locator.click();
     }
+
     public void sleep(int sec)throws InterruptedException{
         Thread.sleep(1000 * sec);
     }
-
     public void typeByXpath(String locator, String value, Keys key){
         ad.findElement(By.xpath(locator)).sendKeys(value);
     }
+
     public void typeByXpath(String locator, String value){
         ad.findElement(By.xpath(locator)).sendKeys(value);
     }

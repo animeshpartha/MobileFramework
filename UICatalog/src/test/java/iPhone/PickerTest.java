@@ -25,7 +25,7 @@ public class PickerTest extends Base {
         picker().getUIPicker();//.selectPickerTwoWheels("Chris Armstrong","3");
         scrollKeys(ad, pickerName,"//UIAPicker[1]");
     }
-    //@Test
+    @Test
     public void testDatePicker(){
         UiCatalog uiCatalog = PageFactory.initElements(ad,UiCatalog.class);
         uiCatalog.getPickers();

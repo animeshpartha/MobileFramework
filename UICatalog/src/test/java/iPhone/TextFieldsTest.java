@@ -1,9 +1,11 @@
 package iPhone;
 
+import ButtonsPage.Buttons;
 import navigate.NavigateUi;
 import TextFieldsPage.TextFields;
 import UiCatalogPage.UiCatalog;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static common.Base.ad;
@@ -13,13 +15,29 @@ import static common.Base.ad;
  */
 public class TextFieldsTest extends NavigateUi {
 
-    TextFields textFields = new TextFields();
+    TextFields textFields;
 
-    @Test
+    @BeforeMethod
     public void navigate()throws InterruptedException{
         UiCatalog ui = PageFactory.initElements(ad, UiCatalog.class);
-        ui.getTextFields();
-        textFields.writeTextToFields();
+        textFields = ui.getTextFields();
 
+    }
+    @Test
+    public void typeOnUiTextFieldTest(){
+        textFields.typeOnUiTextField();
+    }
+
+    @Test
+    public void typeOnUiTextFieldRoundedTest(){
+       textFields.typeOnUiTextFieldRounded();
+    }
+    @Test
+    public void typeOnUiTextFieldSecureTest(){
+       textFields.typeOnUiTextFieldSecure();
+    }
+    @Test
+    public void typeOnUiTextFieldLeftViewTest(){
+        textFields.typeOnUiTextFieldLeftView();
     }
 }
