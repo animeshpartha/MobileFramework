@@ -24,9 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by mrahman on 9/5/15.
- */
 public class Base {
 
     public static AppiumDriver ad = null;

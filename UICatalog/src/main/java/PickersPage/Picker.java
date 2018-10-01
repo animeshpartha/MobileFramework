@@ -7,9 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by mrahman on 1/15/17.
- */
+
 public class Picker extends Base {
     public void selectPickerTwoWheels(String name, String number){
         //scrollKeys(ad, new String[]{name,number});
