@@ -12,6 +12,9 @@
         <module>Generic</module>
         <module>UICatalog</module>
         <module>NYP</module>
+        <module>PerfectPiano</module>
+        <module>HQTrivia</module>
+        <module>UCBrowser</module>
     </modules>
 
     <dependencyManagement>
@@ -21,7 +24,6 @@
                 <artifactId>testng</artifactId>
                 <version>6.9.6</version>
             </dependency>
-
             <dependency>
                 <groupId>io.appium</groupId>
                 <artifactId>java-client</artifactId>

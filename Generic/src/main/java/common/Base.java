@@ -24,9 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by mrahman on 9/5/15.
- */
 public class Base {
 
     public static AppiumDriver ad = null;
@@ -98,8 +95,8 @@ public class Base {
 
         }else if(OS.contains("Android")){
             if(appType.contains("Phone")){
-                appDirectory = new File("Android/src/app");
-                findApp = new File(appDirectory,"snapchat.apk");
+                appDirectory = new File("UCBrowser/src/app");
+                findApp = new File(appDirectory,"UCBrowser.apk");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
                     cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
@@ -144,9 +141,6 @@ public class Base {
             }
 
         }
-
-
-
 
     }
 
@@ -203,5 +197,11 @@ public class Base {
     }
     public void scrollAndClickByName(String locator){
         ad.scrollTo(locator).click();
+    }
+
+    public boolean isVisible(WebElement webElement){
+        if(webElement.isDisplayed()){
+            return true;
+        }else return false;
     }
 }
