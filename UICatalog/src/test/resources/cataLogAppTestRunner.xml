@@ -12,8 +12,13 @@
         <classes>
             <class name="iPhone.ButtonTest"/>
             <class name="iPhone.TextFieldsTest"/>
-            <class name="iPhone.PickerTest"/>
             <class name="iPhone.AlertsTest"/>
+            <class name="iPhone.TextFieldsTest"></class>
+            <class name="iPhone.TextViewTest"></class>
+            <class name="iPhone.WebPageTest"></class>
+            <class name="iPhone.SegmentTest"></class>
+            <class name="iPhone.ToolbarTest"></class>
         </classes>
     </test>
 </suite>
+
